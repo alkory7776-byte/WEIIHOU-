@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEIIHOU | حلول رقمية متكاملة لبناء النمو والموثوقية</title>
+    <meta name="description" content="نبني ونطور ونسوق ونؤتمت أعمالك رقمياً بثقة تنفيذ وشراكة استراتيجية.">
+    
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- الخلفية الحيوية -->
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+    <!-- شريط التنقل (Navbar) -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">WEIIHOU</span>
+            </a>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active" data-i18n="nav_home">الرئيسية</a></li>
+                    <li><a href="#services" data-i18n="nav_services">الخدمات</a></li>
+                    <li><a href="#projects" data-i18n="nav_projects">المشاريع</a></li>
+                    <li><a href="#works" data-i18n="nav_works">الأعمال</a></li>
+                    <li><a href="#sectors" data-i18n="nav_sectors">القطاعات</a></li>
+                    <li><a href="#mechanism" data-i18n="nav_mechanism">آلية العمل</a></li>
+                    <li><a href="#articles" data-i18n="nav_articles">المقالات</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <div class="nav-controls">
+                    <button id="theme-toggle" class="control-btn" aria-label="Toggle Theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <button id="lang-toggle" class="control-btn" aria-label="Toggle Language" data-i18n="lang_toggle">
+                        EN
+                    </button>
+                </div>
+                <div class="mobile-menu-btn" id="mobile-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم الرئيسية (Hero Section) -->
+    <section id="home" class="hero section-padding">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge" data-i18n="hero_badge">شراكة استراتيجية للنمو 🚀</div>
+                <h1 class="hero-title" data-i18n="hero_title">حلول رقمية متكاملة<br>لبناء <span class="text-gradient">النمو والموثوقية</span></h1>
+                <p class="hero-description" data-i18n="hero_desc">نبني ونطور ونسوق ونؤتمت أعمالك رقمياً بثقة تنفيذ وشراكة استراتيجية. دعنا نحول رؤيتك إلى واقع ملموس.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero_btn_primary">اطلب عرض سعر <i class="fas fa-arrow-left"></i></a>
+                    <a href="#contact" class="btn btn-outline" data-i18n="hero_btn_outline">أحجز استشارة</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-card mockup-card">
+                    <div class="mockup-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="mockup-body">
+                        <i class="fas fa-laptop-code mockup-icon"></i>
+                        <div class="lines">
+                            <div class="line w-75"></div>
+                            <div class="line w-50"></div>
+                            <div class="line w-100"></div>
+                            <div class="line w-60"></div>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-1" data-i18n="hero_badge1"><i class="fas fa-rocket"></i> أداء فائق</div>
+                    <div class="floating-badge badge-2" data-i18n="hero_badge2"><i class="fas fa-shield-alt"></i> حماية وأمان</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات (Services) -->
+    <section id="services" class="services section-padding bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="services_title">خدماتنا <span class="text-gradient">الاستثنائية</span></h2>
+                <p class="section-subtitle" data-i18n="services_subtitle">نقدم مجموعة شاملة من الخدمات التقنية لدعم أعمالك للوصول إلى القمة</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass-card">
+                    <div class="icon-wrapper"><i class="fas fa-globe"></i></div>
+                    <h3 data-i18n="srv1_title">تطوير المواقع والمنصات</h3>
+                    <p data-i18n="srv1_desc">برمجة وبناء مواقع إلكترونية ومنصات متكاملة بأحدث التقنيات لضمان أفضل تجربة للمستخدم.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="icon-wrapper"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 data-i18n="srv2_title">تطوير تطبيقات الجوال</h3>
+                    <p data-i18n="srv2_desc">تطبيقات ذكية سريعة الأداء وموثوقة لأنظمة iOS و Android لتصل إلى عملائك أينما كانوا.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="icon-wrapper"><i class="fas fa-bullhorn"></i></div>
+                    <h3 data-i18n="srv3_title">التسويق الرقمي</h3>
+                    <p data-i18n="srv3_desc">استراتيجيات تسويق مبتكرة، تحسين محركات البحث SEO، وإدارة الحملات الإعلانية باحترافية.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="icon-wrapper"><i class="fas fa-shopping-cart"></i></div>
+                    <h3 data-i18n="srv4_title">حلول التجارة الإلكترونية</h3>
+                    <p data-i18n="srv4_desc">إنشاء متاجر إلكترونية متكاملة مع بوابات دفع آمنة وأنظمة إدارة مخزون فعالة.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="icon-wrapper"><i class="fas fa-tools"></i></div>
+                    <h3 data-i18n="srv5_title">الدعم الفني والصيانة</h3>
+                    <p data-i18n="srv5_desc">دعم فني مستمر وصيانة دورية لضمان استقرار وأمان أنظمتك التقنية على مدار الساعة.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="icon-wrapper"><i class="fas fa-cloud"></i></div>
+                    <h3 data-i18n="srv6_title">الخدمات السحابية</h3>
+                    <p data-i18n="srv6_desc">استضافة آمنة، إدارة الخوادم، وحلول سحابية مرنة تتوسع مع نمو أعمالك.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="icon-wrapper"><i class="fas fa-sync-alt"></i></div>
+                    <h3 data-i18n="srv7_title">التحول الرقمي</h3>
+                    <p data-i18n="srv7_desc">استشارات وحلول لتحويل عملياتك التقليدية إلى عمليات رقمية حديثة ترفع الكفاءة التشغيلية.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="icon-wrapper"><i class="fas fa-cogs"></i></div>
+                    <h3 data-i18n="srv8_title">الأنظمة المخصصة للأعمال</h3>
+                    <p data-i18n="srv8_desc">أنظمة إدارية ومحاسبية مفصلة خصيصاً لتلبي الاحتياجات الدقيقة لشركتك ومؤسستك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- مساحات للأقسام الإضافية (المشاريع، الأعمال، المقالات) -->
+    <section id="projects" class="section-padding">
+        <div class="container section-header">
+            <h2 class="section-title" data-i18n="projects_title">أحدث <span class="text-gradient">المشاريع</span></h2>
+            <p class="section-subtitle" data-i18n="projects_subtitle">قريباً.. سيتم إضافة معرض مشاريعنا المميزة</p>
+        </div>
+    </section>
+
+    <!-- قسم القطاعات (Sectors) -->
+    <section id="sectors" class="sectors section-padding bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="sectors_title">القطاعات التي <span class="text-gradient">نخدمها</span></h2>
+                <p class="section-subtitle" data-i18n="sectors_subtitle">نوفر حلولاً مخصصة تناسب احتياجات كل قطاع بدقة واحترافية</p>
+            </div>
+            <div class="sectors-grid">
+                <div class="sector-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3 data-i18n="sec1">المطاعم والمقاهي</h3>
+                </div>
+                <div class="sector-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3 data-i18n="sec2">التعليم</h3>
+                </div>
+                <div class="sector-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3 data-i18n="sec3">الرعاية الصحية</h3>
+                </div>
+                <div class="sector-card">
+                    <i class="fas fa-store"></i>
+                    <h3 data-i18n="sec4">التجزئة</h3>
+                </div>
+                <div class="sector-card">
+                    <i class="fas fa-truck"></i>
+                    <h3 data-i18n="sec5">الخدمات اللوجستية</h3>
+                </div>
+                <div class="sector-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3 data-i18n="sec6">الخدمات المهنية</h3>
+                </div>
+                <div class="sector-card">
+                    <i class="fas fa-building"></i>
+                    <h3 data-i18n="sec7">المنظمات والمؤسسات</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم آلية العمل (Work Mechanism) -->
+    <section id="mechanism" class="mechanism section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="mech_title">آلية <span class="text-gradient">العمل</span></h2>
+                <p class="section-subtitle" data-i18n="mech_subtitle">منهجية واضحة ومدروسة لضمان تنفيذ مشروعك بأعلى جودة وفي الوقت المحدد</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-num">01</div>
+                    <div class="timeline-content glass-card">
+                        <h3 data-i18n="mech1_title">الاكتشاف</h3>
+                        <p data-i18n="mech1_desc">فهم أهدافك والتحديات التي تواجهك، وجمع كافة المتطلبات والمواصفات اللازمة.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-num">02</div>
+                    <div class="timeline-content glass-card">
+                        <h3 data-i18n="mech2_title">الاستراتيجية</h3>
+                        <p data-i18n="mech2_desc">تطوير خطة عمل شاملة، وتحديد التقنيات المناسبة والجدول الزمني للتنفيذ.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-num">03</div>
+                    <div class="timeline-content glass-card">
+                        <h3 data-i18n="mech3_title">تصميم UX/UI</h3>
+                        <p data-i18n="mech3_desc">إنشاء واجهات مستخدم جذابة وتجربة استخدام سلسة تلبي احتياجات جمهورك المستهدف.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-num">04</div>
+                    <div class="timeline-content glass-card">
+                        <h3 data-i18n="mech4_title">التطوير</h3>
+                        <p data-i18n="mech4_desc">كتابة الأكواد وبناء الأنظمة باستخدام أحدث المعايير والتقنيات البرمجية الآمنة.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-num">05</div>
+                    <div class="timeline-content glass-card">
+                        <h3 data-i18n="mech5_title">الاختبار وضمان الجودة</h3>
+                        <p data-i18n="mech5_desc">فحص دقيق لكافة الخصائص لضمان الأداء، الأمان، وخلو النظام من أية أخطاء تقنية.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-num">06</div>
+                    <div class="timeline-content glass-card">
+                        <h3 data-i18n="mech6_title">الإطلاق</h3>
+                        <p data-i18n="mech6_desc">رفع الموقع أو التطبيق للجمهور ومراقبة الأداء لضمان إطلاق ناجح وسلس وتجربة خالية من المتاعب.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-num">07</div>
+                    <div class="timeline-content glass-card">
+                        <h3 data-i18n="mech7_title">التحسين والدعم</h3>
+                        <p data-i18n="mech7_desc">متابعة مستمرة، صيانة دورية، وتحسينات بناءً على بيانات الاستخدام وملاحظات المستخدمين.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم تواصل معنا (Contact Section) -->
+    <section id="contact" class="contact section-padding bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="contact_title">تواصل <span class="text-gradient">معنا</span></h2>
+                <p class="section-subtitle" data-i18n="contact_subtitle">نحن هنا للرد على استفساراتك والبدء في رحلة نجاحك الرقمية</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info glass-card">
+                    <h3 data-i18n="contact_info_title">معلومات التواصل</h3>
+                    <p class="mb-4" data-i18n="contact_info_desc">لا تتردد في الاتصال بنا أو زيارتنا في مقر الشركة. نسعد بخدمتك وتقديم الاستشارة لك!</p>
+                    <ul class="info-list">
+                        <li>
+                            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="info-text">
+                                <strong data-i18n="contact_phone">الهاتف</strong>
+                                <span><a href="tel:+201112227016" dir="ltr" data-i18n="contact_phone_val">+20 111 222 7016</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info-text">
+                                <strong data-i18n="contact_email">البريد الإلكتروني</strong>
+                                <span><a href="mailto:info@weiihou.com">info@weiihou.com</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-text">
+                                <strong data-i18n="contact_address">العنوان</strong>
+                                <span data-i18n="contact_address_val">6 شارع محمد قنديل، المساحة، فيصل، الجيزة، مصر</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info-icon"><i class="fas fa-clock"></i></div>
+                            <div class="info-text">
+                                <strong data-i18n="contact_hours">مواعيد العمل</strong>
+                                <span data-i18n="contact_hours_val">الأحد - الخميس | 9:00 ص - 6:00 م</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form glass-card">
+                    <h3 data-i18n="contact_form_title">أرسل لنا رسالة</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="form_name">الاسم الكامل</label>
+                            <input type="text" id="name" placeholder="أدخل اسمك الكريم" data-i18n-ph="form_name_ph" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company" data-i18n="form_company">اسم الشركة</label>
+                            <input type="text" id="company" placeholder="أدخل اسم الشركة" data-i18n-ph="form_company_ph">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="form_email">البريد الإلكتروني</label>
+                            <input type="email" id="email" placeholder="example@domain.com" data-i18n-ph="form_email_ph" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-i18n="form_phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" placeholder="أدخل رقم هاتفك" data-i18n-ph="form_phone_ph" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="form_msg">الرسالة أو التفاصيل</label>
+                            <textarea id="message" rows="4" placeholder="كيف يمكننا مساعدتك؟" data-i18n-ph="form_msg_ph" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" data-i18n="form_btn">إرسال الرسالة <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- أيقونة واتساب العائمة الفاخرة -->
+    <a href="https://wa.me/201112227016" class="premium-whatsapp-float tilt-element" target="_blank" aria-label="تواصل معنا عبر واتساب">
+        <span class="tooltip">تواصل معنا عبر واتساب</span>
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.878-.788-1.47-1.761-1.643-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <!-- الفوتر (Footer) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>WEIIHOU</h2>
+                    <p data-i18n="footer_desc">حلول رقمية متكاملة لبناء النمو والموثوقية بثقة وشراكة استراتيجية.</p>
+                </div>
+                <div class="social-links premium-socials">
+                    <a href="https://www.facebook.com/share/14ZmkcWHnbj/" class="premium-social-icon facebook" target="_blank" aria-label="Facebook">
+                        <span class="tooltip">تابعنا على Facebook</span>
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="https://www.instagram.com/weiihou.egypt" class="premium-social-icon instagram" target="_blank" aria-label="Instagram">
+                        <span class="tooltip">تابعنا على Instagram</span>
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/للحلول-الرقمية-weihou-8544a5337" class="premium-social-icon linkedin" target="_blank" aria-label="LinkedIn">
+                        <span class="tooltip">تابعنا على LinkedIn</span>
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copy">&copy; 2026 جميع الحقوق محفوظة لشركة WEIIHOU.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
