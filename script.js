@@ -84,13 +84,20 @@ fadeElements.forEach((el, index) => {
     observer.observe(el);
 });
 
-// Form Submission handling with Real-time DB simulation via localStorage
+// Form Submission handling with Formspree and Local Storage backup
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
-        // Gather data
+        const btn = contactForm.querySelector('button[type="submit"]');
+        const originalText = btn.innerHTML;
+        
+        // Show loading state
+        btn.disabled = true;
+        btn.innerHTML = currentLang === 'ar' ? 'جاري الإرسال... <i class="fas fa-spinner fa-spin"></i>' : 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+
+        // Gather data for Local Storage backup
         const newMsg = {
             id: Date.now(),
             name: document.getElementById('name').value,
@@ -98,31 +105,48 @@ if (contactForm) {
             email: document.getElementById('email').value,
             phone: document.getElementById('phone').value,
             message: document.getElementById('message').value,
-            time: new Date().toISOString(), // Use ISO for easier sorting/parsing
+            time: new Date().toISOString(),
             formattedTime: new Date().toLocaleString('ar-EG'),
             read: false
         };
 
-        // Save to "DB" (localStorage)
-        let messages = JSON.parse(localStorage.getItem('contactMessages')) || [];
-        messages.unshift(newMsg); // Add to the top
-        localStorage.setItem('contactMessages', JSON.stringify(messages));
+        try {
+            // Send to Formspree
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
 
-        // Show success visual feedback
-        const btn = contactForm.querySelector('button[type="submit"]');
-        const originalText = btn.innerHTML;
-        
-        btn.innerHTML = (translations[currentLang] && translations[currentLang]['success_msg']) ? translations[currentLang]['success_msg'] : 'تم الإرسال بنجاح! <i class="fas fa-check-circle"></i>';
-        btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
-        
-        // Reset form inputs
-        contactForm.reset();
-        
-        // Reset button state after 3 seconds
-        setTimeout(() => {
-            btn.innerHTML = originalText;
-            btn.style.background = '';
-        }, 3000);
+            if (response.ok) {
+                // Save to "DB" (localStorage) as backup
+                let messages = JSON.parse(localStorage.getItem('contactMessages')) || [];
+                messages.unshift(newMsg);
+                localStorage.setItem('contactMessages', JSON.stringify(messages));
+
+                // Show success visual feedback
+                btn.innerHTML = (translations[currentLang] && translations[currentLang]['success_msg']) ? translations[currentLang]['success_msg'] : 'تم الإرسال بنجاح! <i class="fas fa-check-circle"></i>';
+                btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+                
+                // Reset form inputs
+                contactForm.reset();
+            } else {
+                throw new Error('Formspree error');
+            }
+        } catch (error) {
+            console.error('Submission error:', error);
+            btn.innerHTML = currentLang === 'ar' ? 'فشل الإرسال، حاول لاحقاً <i class="fas fa-exclamation-circle"></i>' : 'Failed to send, try again <i class="fas fa-exclamation-circle"></i>';
+            btn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+        } finally {
+            btn.disabled = false;
+            // Reset button state after 3 seconds
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.style.background = '';
+            }, 3000);
+        }
     });
 }
 

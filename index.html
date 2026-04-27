@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -298,26 +298,26 @@
                 </div>
                 <div class="contact-form glass-card">
                     <h3 data-i18n="contact_form_title">أرسل لنا رسالة</h3>
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formspree.io/f/mpqkgalv" method="POST">
                         <div class="form-group">
                             <label for="name" data-i18n="form_name">الاسم الكامل</label>
-                            <input type="text" id="name" placeholder="أدخل اسمك الكريم" data-i18n-ph="form_name_ph" required>
+                            <input type="text" id="name" name="name" placeholder="أدخل اسمك الكريم" data-i18n-ph="form_name_ph" required>
                         </div>
                         <div class="form-group">
                             <label for="company" data-i18n="form_company">اسم الشركة</label>
-                            <input type="text" id="company" placeholder="أدخل اسم الشركة" data-i18n-ph="form_company_ph">
+                            <input type="text" id="company" name="company" placeholder="أدخل اسم الشركة" data-i18n-ph="form_company_ph">
                         </div>
                         <div class="form-group">
                             <label for="email" data-i18n="form_email">البريد الإلكتروني</label>
-                            <input type="email" id="email" placeholder="example@domain.com" data-i18n-ph="form_email_ph" required>
+                            <input type="email" id="email" name="email" placeholder="example@domain.com" data-i18n-ph="form_email_ph" required>
                         </div>
                         <div class="form-group">
                             <label for="phone" data-i18n="form_phone">رقم الهاتف</label>
-                            <input type="tel" id="phone" placeholder="أدخل رقم هاتفك" data-i18n-ph="form_phone_ph" required>
+                            <input type="tel" id="phone" name="phone" placeholder="أدخل رقم هاتفك" data-i18n-ph="form_phone_ph" required>
                         </div>
                         <div class="form-group">
                             <label for="message" data-i18n="form_msg">الرسالة أو التفاصيل</label>
-                            <textarea id="message" rows="4" placeholder="كيف يمكننا مساعدتك؟" data-i18n-ph="form_msg_ph" required></textarea>
+                            <textarea id="message" name="message" rows="4" placeholder="كيف يمكننا مساعدتك؟" data-i18n-ph="form_msg_ph" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary w-100" data-i18n="form_btn">إرسال الرسالة <i class="fas fa-paper-plane"></i></button>
                     </form>
